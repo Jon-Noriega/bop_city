@@ -5,3 +5,38 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Song.destroy_all
+Artist.destroy_all
+
+biz_markie = Artist.create( 
+    name: "Biz Markie"
+)
+
+dolly_parton = Artist.create( 
+    name: "Dolly Parton"
+)
+
+corky_buchek = Artist.create( 
+    name: "Corky Buchek"
+)
+
+Song.create(
+    title: "Jolene",
+    artist: dolly_parton
+)
+
+Song.create(
+    title: "bing bong bing",
+    artist: corky_buchek
+)
+
+Song.create(
+    title: "9 to 5",
+    artist: dolly_parton
+)
+
+Song.create(
+    title: "You got what I need",
+    artist: biz_markie
+)
